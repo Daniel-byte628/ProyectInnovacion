@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.izquierda,
+.derecha {
+    flex: 1;
+    text-align: center;
+}
+
+.izquierda {
+    order: 1;
+}
+
+.derecha {
+    order: 2;
+}
+
+.izquierda img {
+    max-height: 20vh;
+    width: auto;
+}
+
+.derecha img {
+    max-height: 5vh;
+    width: auto;
+}
+
+
+.parte-superior {
+    background-color: #3498db;
+    width: 100%;
+}
+
+
+.secciones {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    height: 78.5vh;
+}
+
+.seccion1 {
+    border-right: 1px solid #ccc;
+}
+
+.secciones .seccion1 .popular {
+    border-bottom: 1px solid #ccc;
+    height: 15vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.popular .imagen img {
+    max-width: 10vh;
+    margin-left: 70%;
+    object-fit: cover;
+}
+
+.secciones .seccion1 .popular .texto {
+    margin-left: 15%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.popular2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popular2 p {
+    color: #242331;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+}
+
+.popular2 .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular2 .item .imagen img {
+    max-width: 10vh;
+    object-fit: cover;
+}
+
+.popular2 .item .texto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.seccion2 {
+    background: #fff;
+    padding: 20px;
+}
+
+.comentario {
+    background: rgba(211, 211, 211, 0.24);
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.avatar {
+    display: flex;
+    /* Establece un contenedor flexible para la imagen y el nombre */
+    align-items: center;
+    /* Alinea verticalmente la imagen y el nombre */
+    margin-bottom: 5px;
+}
+
+.avatar img {
+    border-radius: 50%;
+    background: #E3E3E3;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.nombre-usuario {
+    font-weight: bold;
+}
+
+.contenido-comentario {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.boton-comentar {
+    margin-top: auto;
+    /* Empuja el botón hacia la parte inferior */
+    align-self: flex-end;
+    /* Alinea el botón a la derecha */
+    background: #E3E3E3;
+    border-radius: 39px;
+    padding: 3vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boton-comentar img {
+    margin-right: 5px;
+}

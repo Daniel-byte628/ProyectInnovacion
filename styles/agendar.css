@@ -1,0 +1,248 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+.imagen-contenedor {
+    width: 30vh;
+    height: 15vh;
+    margin-left: 8vh;
+    margin-bottom: 10vh;
+    overflow: initial;
+    /* Ocultar el desbordamiento de la imagen */
+    display: flex;
+    /* Usa el modelo de caja flexible para centrar */
+    align-items: center;
+    /* Centrar verticalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    position: relative;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+    /* Permite que la imagen mantenga su proporción original */
+    position: absolute;
+    /* Permite ajustar la posición de la imagen dentro del contenedor */
+    top: 0;
+    /* Alinea la parte superior de la imagen con la parte superior del contenedor */
+    left: 0;
+    /* Alinea la parte izquierda de la imagen con la parte izquierda del contenedor */
+}
+
+/*Estilo para el logo*/
+#logo img {
+    width: 15vh;
+    height: 15vh;
+    margin-left: 8vh;
+}
+
+/*Estilo para el formulario*/
+
+.column-form .column {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#login h1 {
+    position: absolute;
+    top: 15% !important;
+}
+
+.column-form .column label,
+input,
+select {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+    border-radius: 20px;
+    height: 40px;
+    border: transparent;
+    padding: 5px;
+}
+
+
+/*estilo boton agendar*/
+
+.agendar {
+    border-color: white;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    padding: 10px;
+    width: 200px;
+    margin-left: 43%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.agendar:hover {
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/**/
+
+label {
+    color: #FFFFFF;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    background: #FFFFFF;
+    padding: 1vh 3vh 1vh;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 60%;
+    margin-right: 10%;
+    margin-left: 0;
+}
+
+
+.main {
+    background: #FF3636;
+    border-radius: 50px;
+    width: 90%;
+    margin: 5%;
+    margin-top: 2%;
+}
+
+.foto-profesional {
+    border-radius: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.main .info-profesional {
+    display: flex;
+    padding-right: 15vh;
+    top: 0;
+}
+
+.main .info-profesional .nombre-profesional {
+    margin-left: 15%;
+    margin-top: 5%;
+    font-size: 200%;
+    color: #FFFFFF;
+}
+
+.agendar-con {
+    margin-left: 40%;
+}
+
+/* Estilos CSS en styles.css */
+
+.column-form {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+}
+
+.colum-form label,
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/*----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+:root {
+    --color-white: hsl(252, 30%, 100%);
+    --color-light: hsl(40, 100%, 97%);
+    --color-gray: hsl(240, 3%, 71%);
+    --color-primary: #e5a70b;
+    --color-secondary: #ffd56b;
+    --color-terciary: hsl(0, 100%, 44%);
+    --color-dark: hsl(252, 30%, 17%);
+    --color-black: hsl(252, 30%, 10%);
+    --color-success: hsl(120, 95%, 65%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+main .container {
+    display: grid;
+    grid-template-columns: 10vw auto 10vw;
+    position: relative;
+
+}
+
+#logo img {
+    margin-top: 10px;
+    width: 14vh;
+    height: 14vh;
+    margin-left: 8vh;
+}
+
+.rating-box {
+    position: relative;
+    background: #fff;
+    padding: 1vh 3vh 1vh;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 35.5%;
+    
+    left: 200%;
+}
+
+.rating-box .stars {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+.stars i {
+    color: #e6e6e6;
+    font-size: 2.3vh;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.stars i.active {
+    color: #ffc978;
+}

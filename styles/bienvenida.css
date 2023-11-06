@@ -1,0 +1,164 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.top-menu {
+    width: 80vh;
+    margin-right: 15vh;
+    background-color: #ECEBEB;
+    border-radius: 40px;
+    padding: 3vh;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+
+.top-menu li {
+    justify-content: center;
+    align-items: center; 
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 500;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+
+}
+
+#buttons {
+    position: absolute;
+    z-index: 5;
+    top: 75%;
+    /* Posiciona los botones en la parte superior de la pantalla */
+    right: 10%;
+    /* Posiciona los botones en la parte izquierda de la pantalla */
+}
+
+#buttons button {
+    margin-right: 10px;
+    color: #FF3636;
+    border: none;
+    font-size: 20px;
+    /* Espacio entre los botones (opcional) */
+}
+
+#buttons button:last-child {
+    background-color: white;
+    /* Fondo blanco para el botón "Registrarse" */
+    border-radius: 20px;
+    /* Bordes redondeados para el botón "Registrarse" */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Sombra alrededor del botón "Registrarse" */
+    padding: 10px 20px;
+}
+
+/* Estilo para el botón "Registrarse" */
+#buttons a:link,
+#buttons a:visited {
+    color: #FF3636;
+    /* Cambia el color del enlace en estado normal y visitado */
+    text-decoration: none;
+    /* Quita el subrayado del enlace */
+}
+
+#login .bienvenido {
+    position: absolute;
+    font-size: 60px;
+    top: 27%;
+    /* Ajusta la posición vertical según tu preferencia */
+    left: 15%;
+    /* Posiciona el encabezado a la izquierda */
+}
+
+#login .homeMade {
+    position: absolute;
+    font-size: 60px;
+    top: 35%;
+    /* Ajusta la posición vertical según tu preferencia */
+    left: 13%;
+    /* Posiciona el encabezado a la izquierda */
+}
+
+form {
+    display: block;
+    /* Hace que los elementos se muestren en una columna vertical */
+    /* Espacio entre los botones y el formulario (opcional) */
+    position: absolute;
+    top: 40%;
+    right: 320px;
+    /* Posiciona el formulario en la parte superior derecha de la pantalla */
+}
+
+form label,
+form input,
+form button {
+    display: block;
+    /* Coloca cada elemento en su propia línea */
+    margin-bottom: 10px;
+    /* Espacio entre los elementos (opcional) */
+}
+
+#login form button[type="submit"] {
+    background-color: red;
+    /* Fondo rojo */
+    color: white;
+    /* Letra blanca */
+    border: none;
+    /* Quita los bordes */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 10px 20px;
+    /* Espaciado interno para separar el texto del borde */
+}
+
+
+
+#logo img {
+    width: 14vh;
+    height: 14vh;
+    margin-left: 8vh;
+}
+
+.manosImg {
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    width: 300px;
+    /* Cambia el ancho de la imagen */
+    height: auto;
+    /* Mantén la proporción de aspecto original */
+}
+
+.fondo-rojo {
+    position: absolute;
+    background-color: #FF3636;
+    /* Color de fondo rojo */
+    font-size: 40px;
+    border-radius: 40px;
+    /* Bordes redondeados (ajusta el valor según tus preferencias) */
+    /* Espaciado interno para separar el contenido del borde */
+    width: 70vh;
+    height: 50vh;
+    /* Ancho máximo deseado */
+    word-wrap: break-word;
+    /* Control de ruptura de palabras */
+    top: 35%;
+    right: 8%;
+    color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 40px;
+}

@@ -1,0 +1,50 @@
+.header__wrapper .right__col .section-content .grid,
+  .grid-resena {
+    height: 80vh;
+    overflow: auto;
+    padding: 0 0 30px;
+  }
+  .review
+  {
+    margin-right: 3vh;
+  }
+  main .container {
+    display: grid;
+    grid-template-columns: 1vw auto 1vw;
+  
+    position: relative;
+  
+  }
+
+  .middle {
+    margin-left: 10vh;
+    justify-content: left;
+  }
+  .grid-resena {
+    display: block;
+    width: 165vh;
+  }
+  .resena
+  {
+    background-color: #48e758;
+    border-radius: 4vh;
+    padding: 3vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    color: white;
+  }
+  .comprobante
+  {
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #48e758;
+    border-radius: 4vh;
+    padding: 3vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+  }
+  button
+  {
+    cursor: pointer;
+  }

@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*Estilo para el logo*/
+#logo img {
+    width: 15vh;
+    height: 15vh;
+    margin-left: 8vh;
+}
+
+
+.main {
+    top: 0;
+    background: #FF3636;
+    border-radius: 50px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1%;
+    padding: 30px;
+}
+
+.metodos {
+    margin: 0 auto;
+    background: #FFFFFF;
+    width: 1000px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+button {
+    border-color: rgb(255, 174, 174);
+    background-color: white;
+    transition: all 0.3s ease;
+    padding: 10px;
+    width: 400px;
+    margin-left: 32%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.boton:hover {
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.main .titulo {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+    margin-left: 40%;
+    padding: 10px;
+    font-size: 200%;
+    color: #FFFFFF;
+    margin-bottom: 3%;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+}
+
+/*----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+:root {
+    --color-white: hsl(252, 30%, 100%);
+    --color-light: hsl(40, 100%, 97%);
+    --color-gray: hsl(240, 3%, 71%);
+    --color-primary: #e5a70b;
+    --color-secondary: #ffd56b;
+    --color-terciary: hsl(0, 100%, 44%);
+    --color-dark: hsl(252, 30%, 17%);
+    --color-black: hsl(252, 30%, 10%);
+    --color-success: hsl(120, 95%, 65%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 10vw auto 10vw;
+    position: relative;
+
+}
+
+#logo img {
+    margin-top: 10px;
+    width: 14vh;
+    height: 14vh;
+    margin-left: 8vh;
+}

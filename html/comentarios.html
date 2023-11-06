@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="../styles/comentarios.css">
+</head>
+
+<body>
+    <header>
+        <a href="Feed.html">
+            <div id="logo">
+                <img src="../assets/imgs/HomeMade.png" alt="Logo de la compañía">
+            </div>
+        </a>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="profile-section">
+                <img class="profile-image" src="../assets/imgs/pintor2.jpg" alt="Imagen de perfil">
+                <h2>JOSÉ MANUEL RODRÍGUEZ</h2>
+                <p><span>Fecha</span>: Miércoles, 7 de abril de 2021</p>
+                <p><span>Total</span>: $80.000</p>
+                <p><span>Servicio</span>: Pintura de interiores marmoleado</p>
+            </div>
+            <div class="divider"></div>
+            <div class="comments-section">
+                <div id="comenti">
+                    <p><span>Comentarios:</span></p>
+                </div>
+                <textarea></textarea>
+                <div class="upload-section">
+                    <img src="../assets/imgs/multimedia.png" alt="Ícono de carga" id="carga">
+                    <p>Arrastra las fotos y videos aquí</p>
+                    <button id="seleccionar" onclick="togglePopup2()">Seleccionar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/perfil.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo img {
+    width: 15vh;
+    height: 15vh;
+    margin-left: 8vh;
+}
+
+.google-calendar {
+    display: flex;
+    top: 8%;
+    position: absolute;
+    margin-left: 25%;
+}

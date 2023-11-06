@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../styles/reUtilizadoHeatWave.css" rel="stylesheet">
+    <link href="../styles/perfil.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICONSCOUT LINK-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="Feed.html">
+                    <img src="../assets/imgs/HomeMade.png" alt="Logo de la compañía" >
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-------------------- MAIN -------------------->
+    <main>
+        <div class="container">
+            <!-------------------- Left (Sidebar) -------------------->
+            <div class="left">
+
+
+            </div>
+            <!------------------- End of LEFT ----------------------->
+            <!-------------------- Middle (feed) -------------------->
+            <div class="middle">
+
+                <div class="header__wrapper">
+                    <!-- <div class="cols__container"> -->
+                    <div class="top">
+                        <a href="calendario.html">
+                            <div class="img__container">
+                                <img class="foto-perfil" src="../assets/imgs/pintor2.jpg">
+                            </div>
+                        </a>
+                        <div class="left__col">
+                            <h2>JOSÉ MANUEL RODRÍGUEZ</h2>
+                            <div class="imagen-con-texto">
+                                <img src="../assets/imgs/mapa.png" alt="Descripción de la imagen" id="mapa">
+                                <p>Bogotá, Colombia.</p>
+                            </div>
+                            <p>Pintor profesional de interiores en @PintuCasa</p>
+                            <p>JosePintucasa@gmail.com</p>
+
+                        </div>
+                        <ul class="about">
+                            <div class="rating-box">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" onclick="togglePopup2()">Editar Pefil</button>
+                        </ul>
+                    </div>
+                    <p>
+                        Hola! Mi nombre es José Manuel Rodríguez y soy pintor profesional desde hace 7 años. Soy experto
+                        en el manejo de técnicas como el marmoleado, la pintura en seco y la pintura en húmedo. Me
+                        encanta mi trabajo y me esfuerzo por hacerlo de la mejor manera posible. Si quieres que pinte tu
+                        casa, no dudes en contactarme!
+                    </p>
+                    <div class="right__col">
+                        <div class="nav-profile">
+                            <ul>
+                                <button id="post-btn">Fotos</button>
+                                <button id="playlist-btn">Reseñas</button>
+
+                            </ul>
+                        </div>
+                        <div class="profile-sections">
+                            <div class="post section-content active" id="post">
+
+                                <label id="contador-fotos">Fotos <span id="numero-fotos">(0)</span></label>
+                                <div class="grid">
+
+                                    <img src="../assets/imgs/marmoleado1.jpg" alt="">
+                                    <img src="../assets/imgs/marmoleado2.jpg" alt="">
+                                    <img src="../assets/imgs/marmoleado3.jpg" alt="">
+
+
+                                    <!-- ACA VAN LAS FOTOSSS -->
+                                </div>
+                            </div>
+                            <div class="playlist section-content" id="playlist">
+                                <label id="contador-reseñas">Reseñas <span id="numero-reseñas">(0)</span></label>
+                                <div class="grid-resena">
+                                    <div class="review">
+                                        <div id="contendor-img">
+
+                                            <img src="../assets/imgs/profile-2.jpg" alt="Imagen de reseña">
+                                        </div>
+                                        <div class="contenti">
+                                            <h3>SARA RODRIGUEZ</h3>
+                                            <div id="negrilla">
+                                                <p style="color: black ;">Servicio: </p>
+                                                <p style="color: black ;">Pintura de interiores: Técnica marmoleado</p>
+
+                                            </div>
+                                            <p>Hace un trabajo excelente, todas mis paredes han sido pintadas por él
+                                            </p>
+                                        </div>
+                                        <div class="rating-box">
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        <div id="contendor-img">
+
+                                            <img src="../assets/imgs/profile-1.jpg" alt="Imagen de reseña">
+                                        </div>
+                                        <div class="contenti">
+                                            <h3>MARÍA DEL CARMEN VILLANUEVA</h3>
+                                            <div id="negrilla">
+                                                <p style="color: black ;">Servicio: </p>
+                                                <p style="color: black ;">Pintura de interiroes: Técnica pintura en seco
+                                                </p>
+
+                                            </div>
+                                            <p>Excelente trabajo</p>
+                                        </div>
+                                        <div class="rating-box">
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        <div id="contendor-img">
+
+                                            <img src="../assets/imgs/profile-3.jpg" alt="Imagen de reseña">
+                                        </div>
+                                        <div class="contenti">
+                                            <h3>MARCELA MICHAELUS JOELYS</h3>
+                                            <div id="negrilla">
+                                                <p style="color: black ;">Servicio: </p>
+                                                <p style="color: black ;"> Pintura de interiroes: Técnica pintura en
+                                                    seco</p>
+
+                                            </div>
+                                            <p>Su fuerte es el marmoleado</p>
+                                        </div>
+                                        <div class="rating-box">
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <!-------------------- END OF FEEDS -------------------->
+            </div>
+            <!-------------------- END OF MIDDLE -------------------->
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <a href="#" class="btn-cerrar-popup" onclick="cerrarPopup()"><i class="fas fa-times"></i></a>
+        <div class="popup" id="popup">
+            <div class="wrapper">
+                <div class="header-area">
+                    <header>Upload a photo and enjoy life!</header>
+                </div>
+                <div class="middle-area">
+                    <form action="#" id="uploadForm">
+                        <div class="form-content">
+                            <label for="fileUpload">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Browse File to Upload</p>
+                                <input id="fileUpload" class="file-input" type="file" name="file"
+                                    accept=".png,.jpg,.jpeg" hidden>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-area">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span>Select Song</span>
+                            <i class="uil uil-angle-down"></i>
+                        </div>
+                        <div class="content">
+                            <div class="search">
+                                <i class="uil uil-search"></i>
+                                <input spellcheck="false" type="text" placeholder="Search">
+                            </div>
+                            <ul class="options"></ul>
+                        </div>
+                    </div>
+                    <button id="btn-post" class="btn-post">Post</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="popup" id="popup2">
+            <div class="wrapper">
+                <div class="header-area">
+                    <header>Change your profile photo!</header>
+                </div>
+                <div class="middle-area">
+                    <form action="#" id="uploadForm">
+                        <div class="form-content">
+                            <label for="fileUpload">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Browse File to Upload</p>
+                                <input id="fileUpload2" class="file-input" type="file" name="file"
+                                    accept=".png,.jpg,.jpeg" hidden>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-area">
+                    <button id="btn-post2" class="btn-post">Post</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/perfil.js"></script>
+
+</body>
+
+</html>

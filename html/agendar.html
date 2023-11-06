@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="../styles/agendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <img src="../assets/imgs/HomeMade.png" alt="Logo de la compañía">
+        </div>
+    </nav>
+    <main>
+        <h1 class="agendar-con">Vas a agendar una cita con: </h1>
+        <div class="main">
+            <div class="info-profesional">
+                <div class="imagen-contenedor">
+                    <img src="/assets/imgs/pintor2.jpg" alt="Foto del profesional" class="foto-profesional">
+                </div>
+                <h2 class="nombre-profesional">José Manuel Rodríguez</h2>
+                <ul class="about">
+                    <div class="rating-box">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <form class="column-form">
+                <div class="column">
+                    <label for="input1">Categoría</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="Categoria 1">Pintor</option>
+                    </select>
+                    <label for="input2">Subcategoría</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="Categoria 1">Interiores</option>
+                        <option value="Categoria 2">Exteriores</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="input3">Titulo del profesional</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="Categoria 1">Pintor</option>
+                    </select>
+                    <label for="input4">Ubicación</label>
+                    <input type="text" id="input4" name="input4">
+                </div>
+                <div class="column">
+                    <label for="input5">Fecha</label>
+                    <input class="form-control" type="datetime-local" placeholder="Select DateTime">
+                </div>
+            </form>
+            <a href="elegirPago.html">
+                <button class="agendar">Agendar</button>
+            </a>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#input[type=datetime-local]", {});
+    </script>
+</body>
+
+</html>
